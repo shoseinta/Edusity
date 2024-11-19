@@ -9,7 +9,6 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import VideoPlayer from "./Components/VideoPlayer/VideoPlayer";
-import { Children } from "react";
 import Section from "./Section";
 
 const App = () => {
@@ -49,7 +48,6 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-        <Title subTitle="OUR PROGRAM" title="What We Offer"/>
         {sectionsData.map(sectionData => <Section key={sectionData.id} {...sectionData} />)}
         <Footer/>
       </div>
