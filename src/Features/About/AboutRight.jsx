@@ -30,3 +30,5 @@ const AboutRight = () => {
     </div>
     )
 }
+
+export default AboutRight;
