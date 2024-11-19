@@ -9,29 +9,52 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import VideoPlayer from "./Components/VideoPlayer/VideoPlayer";
+import { Children } from "react";
+import Section from "./Section";
 
 const App = () => {
 
   const [playState, setPlayState] = useState(false);
+  const sectionsData = [
+    {
+      id: 1,
+      title: "What We Offer",
+      subTitle: "OUR PROGRAM",
+      children: <><Programs /> <About setPlayState={setPlayState} /></>
+    },
+    {
+      id: 2,
+      title: "Campus Photos",
+      subTitle: "GALLERY",
+      children: <Campus />
+    },
+    {
+      id: 3,
+      title: "What Students Say",
+      subTitle: "TESTIMONIALS",
+      children: <Testimonials />
+    },
+    {
+      id: 4,
+      title: "Get in Touch",
+      subTitle: "CONTACT US",
+      children: <Contact />
+    }
+  ];
+  
+  
 
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <div className="container">
         <Title subTitle="OUR PROGRAM" title="What We Offer"/>
-        <Programs />
-        <About setPlayState={setPlayState}/>
-        <Title subTitle="GALLERY" title="Campus Photos"/>
-        <Campus/>
-        <Title subTitle="TESTIMONIALS" title="What Students Says"/>
-        <Testimonials/>
-        <Title subTitle="Contact Us" title="Get in Touch"/>
-        <Contact/>
+        {sectionsData.map(sectionData => <Section key={sectionData.id} {...sectionData} />)}
         <Footer/>
       </div>
       <VideoPlayer playState={playState} setPlayState={setPlayState}/>
-    </div>
+    </>
   );
 };
 

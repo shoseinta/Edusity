@@ -5,8 +5,8 @@ import video from "../../assets/Our Kim Jong Un [Subtitles].mp4";
 const VideoPlayer = ({ playState, setPlayState }) => {
   const player = useRef(null);
 
-  const closePlayer = (e) => {
-    if (e.target === player.current) {
+  const closePlayer = (event) => {
+    if (event.target === player.current) {
       setPlayState(false);
     }
   };
