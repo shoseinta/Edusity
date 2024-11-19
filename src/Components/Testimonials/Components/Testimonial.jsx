@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Testimonial = ({ userImage, userName, userLocation, message }) => (
   <div className="slide">
     <div className="user-info">
@@ -11,4 +13,12 @@ const Testimonial = ({ userImage, userName, userLocation, message }) => (
   </div>
 );
 
+Testimonial.propTypes = {
+  userImage: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
+  userLocation: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired
+};
+
 export default Testimonial;
+

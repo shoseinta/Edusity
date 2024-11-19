@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useRef } from "react";
 import "./VideoPlayer.css";
 import video from "../../../assets/Our Kim Jong Un [Subtitles].mp4";
@@ -20,6 +21,11 @@ const VideoPlayer = ({ playState, setPlayState }) => {
       <video src={video} autoPlay muted controls></video>
     </div>
   );
+};
+
+VideoPlayer.propTypes = {
+  playState: PropTypes.bool.isRequired,
+  setPlayState: PropTypes.func.isRequired
 };
 
 export default VideoPlayer;
