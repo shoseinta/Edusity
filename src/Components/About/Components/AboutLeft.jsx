@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import PropTypes from "prop-types";
+import { AppContext } from "../../../Contexts/AppContext";
 import about_img from "../../../assets/about.png";
 import play_icon from "../../../assets/play-icon.png";
 import "./AboutLeft.css";
 
-const AboutLeft = ({ setPlayState }) => {
+const AboutLeft = () => {
+  const { setPlayState } = useContext(AppContext);
   const playIconClick = () => setPlayState(true);
 
   return (

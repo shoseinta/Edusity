@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "./Components/Navbar/Containers/Navbar";
 import Hero from "./Components/Hero/Containers/Hero";
 import Programs from "./Components/Programs/Containers/Programs";
@@ -9,9 +8,9 @@ import Contact from "./Components/Contact/Containers/Contact";
 import Footer from "./Components/Footer/Containers/Footer";
 import VideoPlayer from "./Components/VideoPlayer/Containers/VideoPlayer";
 import Section from "./Shared/Containers/Section";
+import { AppProvider } from "./Contexts/AppContext";
 
 const App = () => {
-  const [playState, setPlayState] = useState(false);
   const sectionsData = [
     {
       id: 1,
@@ -19,7 +18,7 @@ const App = () => {
       subTitle: "OUR PROGRAM",
       children: (
         <>
-          <Programs /> <About setPlayState={setPlayState} />
+          <Programs /> <About />
         </>
       ),
     },
@@ -44,7 +43,7 @@ const App = () => {
   ];
 
   return (
-    <>
+    <AppProvider>
       <Navbar />
       <Hero />
       <div className="container">
@@ -53,8 +52,8 @@ const App = () => {
         ))}
         <Footer />
       </div>
-      <VideoPlayer playState={playState} setPlayState={setPlayState} />
-    </>
+      <VideoPlayer />
+    </AppProvider>
   );
 };
 

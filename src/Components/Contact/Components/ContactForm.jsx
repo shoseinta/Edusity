@@ -6,7 +6,6 @@ import white_arrow from "../../../assets/white-arrow.png";
 
 const ContactForm = () => {
   const [result, setResult] = useState("");
-  
 
   const onSubmit = async (event) => {
     event.preventDefault();

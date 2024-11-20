@@ -4,9 +4,6 @@ import Testimonial from "./Testimonial";
 import { testimonialsData } from "../../../Constants/Constants";
 import "./Slider.css";
 
-
-
-
 const Slider = ({ tx }) => {
   const slider = useRef();
   return (

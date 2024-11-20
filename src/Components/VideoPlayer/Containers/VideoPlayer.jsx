@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import "./VideoPlayer.css";
 import video from "../../../assets/Our Kim Jong Un [Subtitles].mp4";
+import { AppContext } from "../../../Contexts/AppContext";
 
-const VideoPlayer = ({ playState, setPlayState }) => {
+const VideoPlayer = () => {
+  const { playState, setPlayState } = useContext(AppContext);
   const player = useRef(null);
 
   const closePlayer = (e) => {
