@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './ContactInput.css';
 
 const ContactInput = ({ label, type, nameAttr, placeholderAttr }) => {
   return (
