@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import "./Title.css";
 
 const Title = ({ subTitle, title }) => {
   return (
-    <div className='title'>
+    <div className="title">
       <p>{subTitle}</p>
       <h1>{title}</h1>
     </div>
@@ -12,7 +12,7 @@ const Title = ({ subTitle, title }) => {
 
 Title.propTypes = {
   subTitle: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default Title;

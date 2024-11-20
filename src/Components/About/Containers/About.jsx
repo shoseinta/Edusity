@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import AboutLeft from "../Components/AboutLeft";
 import AboutRight from "../Components/AboutRight";
 import "./About.css";
@@ -13,7 +13,7 @@ const About = ({ setPlayState }) => {
 };
 
 About.propTypes = {
-  setPlayState: PropTypes.func.isRequired
+  setPlayState: PropTypes.func.isRequired,
 };
 
 export default About;

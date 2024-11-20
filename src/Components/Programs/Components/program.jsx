@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const Program = ({ imageSrc, description, imageIcon }) => {
   return (
@@ -15,7 +15,7 @@ const Program = ({ imageSrc, description, imageIcon }) => {
 Program.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  imageIcon: PropTypes.string.isRequired
+  imageIcon: PropTypes.string.isRequired,
 };
 
 export default Program;

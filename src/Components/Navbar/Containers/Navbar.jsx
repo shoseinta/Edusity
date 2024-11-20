@@ -13,54 +13,53 @@ const Navbar = () => {
   const navListData = [
     {
       id: 1,
-      linkTo: 'hero',
+      linkTo: "hero",
       offset: 0,
-      label: 'Home',
+      label: "Home",
       smooth: true,
-      duration: 500
+      duration: 500,
     },
     {
       id: 2,
-      linkTo: 'programs',
+      linkTo: "programs",
       offset: -260,
-      label: 'Programs',
+      label: "Programs",
       smooth: true,
-      duration: 500
+      duration: 500,
     },
     {
       id: 3,
-      linkTo: 'about',
+      linkTo: "about",
       offset: -130,
-      label: 'About us',
+      label: "About us",
       smooth: true,
-      duration: 500
+      duration: 500,
     },
     {
       id: 4,
-      linkTo: 'campus',
+      linkTo: "campus",
       offset: -250,
-      label: 'Campus',
+      label: "Campus",
       smooth: true,
-      duration: 500
+      duration: 500,
     },
     {
       id: 5,
-      linkTo: 'testimonials',
+      linkTo: "testimonials",
       offset: -250,
-      label: 'Testimonials',
+      label: "Testimonials",
       smooth: true,
-      duration: 500
+      duration: 500,
     },
     {
       id: 6,
-      linkTo: 'contact',
+      linkTo: "contact",
       offset: -250,
-      label: 'Contact us',
+      label: "Contact us",
       smooth: true,
-      duration: 500
-    }
+      duration: 500,
+    },
   ];
-  
 
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
@@ -75,8 +74,10 @@ const Navbar = () => {
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} className="logo" />
-      <ul className={mobileMenu?"":"hide-mobile-menu" }>
-        {navListData.map(ListItem => <NavbarListItem key={ListItem.id} {...ListItem}/>)}
+      <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
+        {navListData.map((ListItem) => (
+          <NavbarListItem key={ListItem.id} {...ListItem} />
+        ))}
         <NavbarButton />
       </ul>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />

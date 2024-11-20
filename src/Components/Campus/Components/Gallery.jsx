@@ -4,14 +4,14 @@ import gallery_3 from "../../../assets/gallery-3.png";
 import gallery_4 from "../../../assets/gallery-4.png";
 
 const Gallery = () => {
-    return(
-      <div className="gallery">
-        <img src={gallery_1} alt="" />
-        <img src={gallery_2} alt="" />
-        <img src={gallery_3} alt="" />
-        <img src={gallery_4} alt="" />
-      </div>
-    )
-}
+  return (
+    <div className="gallery">
+      <img src={gallery_1} alt="" />
+      <img src={gallery_2} alt="" />
+      <img src={gallery_3} alt="" />
+      <img src={gallery_4} alt="" />
+    </div>
+  );
+};
 
 export default Gallery;

@@ -1,13 +1,11 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const AboutParagraph = ({ content }) => {
-  return (
-    <p>{content}</p>
-  );
+  return <p>{content}</p>;
 };
 
 AboutParagraph.propTypes = {
-  content: PropTypes.string.isRequired
+  content: PropTypes.string.isRequired,
 };
 
 export default AboutParagraph;

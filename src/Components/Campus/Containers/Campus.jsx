@@ -6,7 +6,9 @@ const Campus = () => {
   return (
     <div className="campus">
       <Gallery />
-      <button className="btn dark-btn">See More Here <img src={white_arrow} alt="" /></button>
+      <button className="btn dark-btn">
+        See More Here <img src={white_arrow} alt="" />
+      </button>
     </div>
   );
 };

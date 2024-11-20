@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import white_arrow from "../../../assets/white-arrow.png";
 
 const ContactForm = () => {
@@ -31,12 +31,7 @@ const ContactForm = () => {
     <div className="contact-col">
       <form onSubmit={onSubmit}>
         <label>Your Name</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter Your Name"
-          required
-        />
+        <input type="text" name="name" placeholder="Enter Your Name" required />
         <label>Phone Number</label>
         <input
           type="tel"
