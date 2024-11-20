@@ -1,7 +1,8 @@
+import React from "react";
 import PropTypes from "prop-types";
 import "./ContactInput.css";
 
-const ContactInput = ({ label, type, nameAttr, placeholderAttr }) => {
+const ContactInput = React.memo(({ label, type, nameAttr, placeholderAttr }) => {
   return (
     <>
       <label>{label}</label>
@@ -13,7 +14,10 @@ const ContactInput = ({ label, type, nameAttr, placeholderAttr }) => {
       />
     </>
   );
-};
+});
+
+// Set the display name
+ContactInput.displayName = "ContactInput";
 
 ContactInput.propTypes = {
   label: PropTypes.string.isRequired,

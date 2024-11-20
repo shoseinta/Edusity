@@ -5,11 +5,11 @@ import "./TestimonialImages.css";
 
 const TestiomonialImages = ({ setTx }) => {
   const slideForward = () => {
-    setTx((prevTx) => (prevTx > -75 ? prevTx - 25 : 0)); // Updated range
+    setTx((prevTx) => (prevTx > -75 ? prevTx - 25 : 0));
   };
 
   const slideBackward = () => {
-    setTx((prevTx) => (prevTx < 0 ? prevTx + 25 : -75)); // Updated range
+    setTx((prevTx) => (prevTx < 0 ? prevTx + 25 : -75));
   };
 
   return (

@@ -1,7 +1,8 @@
+import React from "react";
 import PropTypes from "prop-types";
 import "./Testimonial.css";
 
-const Testimonial = ({ userImage, userName, userLocation, message }) => (
+const Testimonial = React.memo(({ userImage, userName, userLocation, message }) => (
   <div className="slide">
     <div className="user-info">
       <img src={userImage} alt={userName} />
@@ -12,7 +13,9 @@ const Testimonial = ({ userImage, userName, userLocation, message }) => (
     </div>
     <p>{message}</p>
   </div>
-);
+));
+
+Testimonial.displayName = "Testimonial";
 
 Testimonial.propTypes = {
   userImage: PropTypes.string.isRequired,
