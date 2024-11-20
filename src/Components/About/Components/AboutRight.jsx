@@ -1,4 +1,5 @@
 import AboutParagraph from "./AboutParagraph";
+import './AboutRight.css'
 const AboutRight = () => {
   const AboutParagraphs = [
     {

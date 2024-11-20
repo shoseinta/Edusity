@@ -46,7 +46,7 @@ const Slider = ({ tx }) => {
   return (
     <div className="slider">
       <ul ref={slider} style={{ transform: `translateX(${tx}%)` }}>
-        {testimonialsData.map((testimonial) => (
+        {testimonialsData.map(testimonial => (
           <li key={testimonial.id}>
             <Testimonial {...testimonial} />
           </li>
