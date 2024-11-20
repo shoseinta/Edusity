@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./Program.css";
 
 const Program = ({ imageSrc, description, imageIcon }) => {
   return (
