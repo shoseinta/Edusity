@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import PropTypes from "prop-types";
 import { AppContext } from "../../../Contexts/AppContext";
 import about_img from "../../../assets/about.png";
 import play_icon from "../../../assets/play-icon.png";
@@ -22,8 +21,5 @@ const AboutLeft = () => {
   );
 };
 
-AboutLeft.propTypes = {
-  setPlayState: PropTypes.func.isRequired,
-};
 
 export default AboutLeft;
