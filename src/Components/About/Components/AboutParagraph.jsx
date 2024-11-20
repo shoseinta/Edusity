@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import './AboutParagraph.css'
+import "./AboutParagraph.css";
 
 const AboutParagraph = ({ content }) => {
   return <p>{content}</p>;

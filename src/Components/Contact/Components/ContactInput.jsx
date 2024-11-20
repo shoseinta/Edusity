@@ -1,11 +1,16 @@
-import PropTypes from 'prop-types';
-import './ContactInput.css';
+import PropTypes from "prop-types";
+import "./ContactInput.css";
 
 const ContactInput = ({ label, type, nameAttr, placeholderAttr }) => {
   return (
     <>
       <label>{label}</label>
-      <input type={type} name={nameAttr} placeholder={placeholderAttr} required />
+      <input
+        type={type}
+        name={nameAttr}
+        placeholder={placeholderAttr}
+        required
+      />
     </>
   );
 };
@@ -14,7 +19,7 @@ ContactInput.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   nameAttr: PropTypes.string.isRequired,
-  placeholderAttr: PropTypes.string.isRequired
+  placeholderAttr: PropTypes.string.isRequired,
 };
 
 export default ContactInput;

@@ -1,0 +1,13 @@
+.slider {
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  width: 200%;
+  transition: 0.5s;
+}
+.slider ul li {
+  list-style: none;
+  width: 50%;
+  padding: 40px;
+}

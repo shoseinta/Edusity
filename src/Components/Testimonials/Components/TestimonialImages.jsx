@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import next_icon from "../../../assets/next-icon.png";
 import back_icon from "../../../assets/back-icon.png";
+import "./TestimonialImages.css";
 
 const TestiomonialImages = ({ setTx }) => {
   const slideForward = () => {
@@ -30,7 +31,7 @@ const TestiomonialImages = ({ setTx }) => {
 };
 
 TestiomonialImages.propTypes = {
-  setTx: PropTypes.func.isRequired
+  setTx: PropTypes.func.isRequired,
 };
 
 export default TestiomonialImages;

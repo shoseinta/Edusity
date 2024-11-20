@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TestiomonialImages from "./TestimonialImages";
 import Slider from "./Slider";
-
+import "./TestimonialSlider.css";
 
 const TestimonialSlider = () => {
   const [tx, setTx] = useState(0);

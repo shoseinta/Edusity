@@ -1,4 +1,4 @@
-import './ContactInfo.css'
+import "./ContactInfo.css";
 import msg_icon from "../../../assets/msg-icon.png";
 import mail_icon from "../../../assets/mail-icon.png";
 import phone_icon from "../../../assets/phone-icon.png";

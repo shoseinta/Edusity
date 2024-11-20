@@ -1,8 +1,7 @@
 import { useState } from "react";
 import ContactInput from "./ContactInput";
-import './ContactForm.css';
+import "./ContactForm.css";
 import white_arrow from "../../../assets/white-arrow.png";
-
 
 const ContactForm = () => {
   const [result, setResult] = useState("");

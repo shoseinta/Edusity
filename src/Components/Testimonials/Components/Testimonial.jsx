@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./Testimonial.css";
 
 const Testimonial = ({ userImage, userName, userLocation, message }) => (
   <div className="slide">

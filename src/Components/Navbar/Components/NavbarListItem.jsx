@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-scroll";
-import './NavbarListItem.css';
+import "./NavbarListItem.css";
 
 const NavbarListItem = ({ linkTo, offset, label, smooth, duration }) => {
   return (
