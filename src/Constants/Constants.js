@@ -1,3 +1,8 @@
+import Programs from "../Components/Programs/Containers/Programs";
+import About from "../Components/About/Containers/About";
+import Campus from "../Components/Campus/Containers/Campus";
+import Testimonials from "../Components/Testimonials/Containers/Testimonials";
+import Contact from "../Components/Contact/Containers/Contact";
 import program_1 from "../assets/program-1.png";
 import program_2 from "../assets/program-2.png";
 import program_3 from "../assets/program-3.png";
@@ -8,6 +13,37 @@ import user_1 from "../assets/user-1.png";
 import user_2 from "../assets/user-2.png";
 import user_3 from "../assets/user-3.png";
 import user_4 from "../assets/user-4.png";
+
+export const sectionsData = [
+  {
+    id: 1,
+    title: "What We Offer",
+    subTitle: "OUR PROGRAM",
+    children: (
+      <>
+        <Programs /> <About />
+      </>
+    ),
+  },
+  {
+    id: 2,
+    title: "Campus Photos",
+    subTitle: "GALLERY",
+    children: <Campus />,
+  },
+  {
+    id: 3,
+    title: "What Students Say",
+    subTitle: "TESTIMONIALS",
+    children: <Testimonials />,
+  },
+  {
+    id: 4,
+    title: "Get in Touch",
+    subTitle: "CONTACT US",
+    children: <Contact />,
+  },
+];
 
 export const inputsData = [
   {
