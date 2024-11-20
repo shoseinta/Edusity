@@ -1,8 +1,25 @@
 import { useState } from "react";
 import white_arrow from "../../../assets/white-arrow.png";
+import ContactInput from "./ContactInput";
 
 const ContactForm = () => {
   const [result, setResult] = useState("");
+  const inputsData = [
+    {
+      id: 1,
+      label: "Your Name",
+      type: "text",
+      nameAttr: "name",
+      placeholderAttr: "Enter Your Name",
+    },
+    {
+      id: 2,
+      label: "Phone Number",
+      type: "tel",
+      nameAttr: "phone",
+      placeholderAttr: "Enter Your Mobile Number",
+    },
+  ];
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,15 +47,9 @@ const ContactForm = () => {
   return (
     <div className="contact-col">
       <form onSubmit={onSubmit}>
-        <label>Your Name</label>
-        <input type="text" name="name" placeholder="Enter Your Name" required />
-        <label>Phone Number</label>
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Enter Your Mobile Number"
-          required
-        />
+        {inputsData.map((inputData) => (
+          <ContactInput key={inputData.id} {...inputData} />
+        ))}
         <label>Write Your Message Here</label>
         <textarea
           name="message"

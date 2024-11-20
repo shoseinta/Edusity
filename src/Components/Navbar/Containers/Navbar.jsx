@@ -51,14 +51,6 @@ const Navbar = () => {
       smooth: true,
       duration: 500,
     },
-    {
-      id: 6,
-      linkTo: "contact",
-      offset: -250,
-      label: "Contact us",
-      smooth: true,
-      duration: 500,
-    },
   ];
 
   const toggleMenu = () => {

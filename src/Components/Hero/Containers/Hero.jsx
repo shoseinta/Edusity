@@ -11,7 +11,7 @@ const Hero = () => {
           knowledge, skills, and experinces needed to excel in the dynamic field
           of education
         </p>
-        <button>
+        <button className="btn">
           Explore More <img src={dark_arrow} alt="" />
         </button>
       </div>

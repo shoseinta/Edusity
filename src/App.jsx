@@ -8,7 +8,7 @@ import Testimonials from "./Components/Testimonials/Containers/Testimonials";
 import Contact from "./Components/Contact/Containers/Contact";
 import Footer from "./Components/Footer/Containers/Footer";
 import VideoPlayer from "./Components/VideoPlayer/Containers/VideoPlayer";
-import Section from "./Section";
+import Section from "./Shared/Containers/Section";
 
 const App = () => {
   const [playState, setPlayState] = useState(false);
