@@ -14,13 +14,6 @@ nav {
 .logo {
   width: 180px;
 }
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 5px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
 .dark-nav {
   background-color: #212ea0;
 }
