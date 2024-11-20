@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import Testimonial from "../Components/Testimonial";
+import Testimonial from "./Testimonial";
 import next_icon from "../../../assets/next-icon.png";
 import back_icon from "../../../assets/back-icon.png";
 import user_1 from "../../../assets/user-1.png";
