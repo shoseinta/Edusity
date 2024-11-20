@@ -1,26 +1,12 @@
 import { useState } from "react";
 import ContactInput from "./ContactInput";
+import { inputsData } from "../../../Constants/Constants";
 import "./ContactForm.css";
 import white_arrow from "../../../assets/white-arrow.png";
 
 const ContactForm = () => {
   const [result, setResult] = useState("");
-  const inputsData = [
-    {
-      id: 1,
-      label: "Your Name",
-      type: "text",
-      nameAttr: "name",
-      placeholderAttr: "Enter Your Name",
-    },
-    {
-      id: 2,
-      label: "Phone Number",
-      type: "tel",
-      nameAttr: "phone",
-      placeholderAttr: "Enter Your Mobile Number",
-    },
-  ];
+  
 
   const onSubmit = async (event) => {
     event.preventDefault();
