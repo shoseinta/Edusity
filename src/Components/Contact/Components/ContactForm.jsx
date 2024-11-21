@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ContactInput from "./ContactInput";
-import { inputsData } from "../../../Constants/Constants";
+import { inputsData } from "../../../Constants/inputsData";
 import "./ContactForm.css";
 import white_arrow from "../../../assets/white-arrow.png";
 

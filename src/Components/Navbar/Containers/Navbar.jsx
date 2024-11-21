@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { navListData } from "../../../Constants/Constants";
+import { navListData } from "../../../Constants/navListData";
 import NavbarListItem from "../Components/NavbarListItem";
 import NavbarButton from "../Components/NavbarButton";
 import "./Navbar.css";

@@ -2,19 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ContactInput.css";
 
-const ContactInput = React.memo(({ label, type, nameAttr, placeholderAttr }) => {
-  return (
-    <>
-      <label>{label}</label>
-      <input
-        type={type}
-        name={nameAttr}
-        placeholder={placeholderAttr}
-        required
-      />
-    </>
-  );
-});
+const ContactInput = React.memo(
+  ({ label, type, nameAttr, placeholderAttr }) => {
+    return (
+      <>
+        <label>{label}</label>
+        <input
+          type={type}
+          name={nameAttr}
+          placeholder={placeholderAttr}
+          required
+        />
+      </>
+    );
+  },
+);
 
 // Set the display name
 ContactInput.displayName = "ContactInput";

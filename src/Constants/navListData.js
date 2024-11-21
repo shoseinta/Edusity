@@ -1,0 +1,42 @@
+export const navListData = [
+  {
+    id: 1,
+    linkTo: "hero",
+    offset: 0,
+    label: "Home",
+    smooth: true,
+    duration: 500,
+  },
+  {
+    id: 2,
+    linkTo: "programs",
+    offset: -260,
+    label: "Programs",
+    smooth: true,
+    duration: 500,
+  },
+  {
+    id: 3,
+    linkTo: "about",
+    offset: -130,
+    label: "About us",
+    smooth: true,
+    duration: 500,
+  },
+  {
+    id: 4,
+    linkTo: "campus",
+    offset: -250,
+    label: "Campus",
+    smooth: true,
+    duration: 500,
+  },
+  {
+    id: 5,
+    linkTo: "testimonials",
+    offset: -250,
+    label: "Testimonials",
+    smooth: true,
+    duration: 500,
+  },
+];

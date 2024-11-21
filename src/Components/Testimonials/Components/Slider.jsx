@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import PropTypes from "prop-types";
 import Testimonial from "./Testimonial";
-import { testimonialsData } from "../../../Constants/Constants";
+import { testimonialsData } from "../../../Constants/testimonialsData";
 import "./Slider.css";
 
 const Slider = ({ tx }) => {

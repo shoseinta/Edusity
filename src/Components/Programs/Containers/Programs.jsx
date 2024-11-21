@@ -1,5 +1,5 @@
 import Program from "../Components/program";
-import { programsData } from "../../../Constants/Constants";
+import { programsData } from "../../../Constants/programsData";
 import "./Programs.css";
 
 const Programs = () => {

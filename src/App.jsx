@@ -3,9 +3,8 @@ import Hero from "./Components/Hero/Containers/Hero";
 import Footer from "./Components/Footer/Containers/Footer";
 import VideoPlayer from "./Components/VideoPlayer/Containers/VideoPlayer";
 import Section from "./Shared/Containers/Section";
-import { sectionsData } from "./Constants/Constants";
+import { sectionsData } from "./Constants/sectionsData";
 import { AppProvider } from "./Contexts/AppContext";
-
 
 const App = () => {
   return (

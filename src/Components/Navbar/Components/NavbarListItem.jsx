@@ -3,15 +3,17 @@ import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import "./NavbarListItem.css";
 
-const NavbarListItem = React.memo(({ linkTo, offset, label, smooth, duration }) => {
-  return (
-    <li>
-      <Link to={linkTo} offset={offset} smooth={smooth} duration={duration}>
-        {label}
-      </Link>
-    </li>
-  );
-});
+const NavbarListItem = React.memo(
+  ({ linkTo, offset, label, smooth, duration }) => {
+    return (
+      <li>
+        <Link to={linkTo} offset={offset} smooth={smooth} duration={duration}>
+          {label}
+        </Link>
+      </li>
+    );
+  },
+);
 
 NavbarListItem.displayName = "NavbarListItem";
 

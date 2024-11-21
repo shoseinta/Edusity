@@ -21,5 +21,4 @@ const AboutLeft = () => {
   );
 };
 
-
 export default AboutLeft;
